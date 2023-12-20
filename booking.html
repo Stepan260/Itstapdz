@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Комната Ярости</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><img class="logo" src="photos/photo_2023-09-20_20-27-09-removebg-preview.png" alt="logo"></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="main.html">Главная</a></li>
+            <li><a href="booking.html">Забронировать сейчас</a></li>
+            <li><a href="gifts.html">Подарочные сертификаты</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form id="booking-form">
+            <label for="date">Дата:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Время:</label>
+            <select id="time" name="time" required>
+                <!-- Временные слоты будут динамически добавлены с помощью JavaScript -->
+            </select>
+            <button type="submit">Забронировать</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 Ваша Компания</p>
+    </footer>
+    <script src="booking.js"></script>
+</body>
+</html>

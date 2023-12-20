@@ -1,0 +1,294 @@
+header {
+    height: 90px;
+}
+
+
+body {
+    background-color: #000; /* Черный цвет фона */
+    color: #fff; /* Белый цвет текста (для контраста) */
+}
+/* Стили для навигационного меню */
+nav {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    font-style: italic;
+    font-size: 120%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right; /* Выравнивание текста по правому краю */
+}
+
+nav li {
+    display: inline;
+    margin-left: 20px; /* Добавляем отступ между элементами списка */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s; /* Анимация изменения цвета */
+}
+
+/* При наведении на ссылку */
+nav a:hover {
+    color: #ff0000; /* Красный цвет при наведении */
+}
+
+/* Для логотипа */
+.logo {
+    max-width: 200px; /* Максимальная ширина */
+    max-height: 130px; /* Максимальная высота */
+    margin-left: 20px;
+    margin-top: -30px;
+}
+
+/* Стили для заголовка с классом "Get Out" */
+.GetOut {
+    font-size: 400%;
+    text-align: center; /* Центрирование текста */
+    margin-top: 150px;
+    
+}
+/* Стили для заголовка с классом "gifts" */
+ .gifts {
+    font-size: 90%;
+    text-align: center;
+    margin-top: 70px;
+    
+ }
+
+ /* Стили для заголовка с классом "booknow" */
+
+ .booknow {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    text-decoration: none; /* Убираем подчеркивание ссылки */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+ }
+ .booknow:hover {
+    background-color: #fafafa;
+    color: #000000;
+   
+ }
+
+
+
+
+ /* Стили для контейнера */
+.container {
+    width: 100%;
+    height: 800px; /* Высота контейнера, на котором будет виден фон */
+    position: relative;
+    overflow: hidden; /* Чтобы обрезать GIF внутри контейнера */
+}
+
+/* Стили для анимации фона */
+@keyframes animatedBackground {
+    0% { left: 0; }
+    100% { left: -200%; }
+}
+
+/* Стили для фона с GIF */
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%; /* Удваиваем ширину, чтобы GIF проигрывался в два оборота */
+    height: 100%;
+    background-repeat: repeat-x; /* Повторяем GIF только по горизонтали */
+    animation: animatedBackground 10s linear infinite; /* Проигрывание анимации бесконечно */
+    z-index: 1;
+}
+
+/* Стили для текста поверх GIF */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центрируем текст по центру контейнера */
+    z-index: 1; /* Устанавливаем текст поверх GIF */
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0); /* Черный полупрозрачный фон для текста */
+    padding: 20px;
+}
+
+/* Стили для текста */
+h2 {
+    margin: 0; /* Убираем внешние отступы для h2 */
+}
+
+.FAQ {
+    font-size: 400%;
+    text-align: center; /* Центрирование текста */
+    margin-top: 150px;
+    color: #807c7c;
+    margin-bottom: 30px;
+}
+.about {
+    width: 1050px; /* Фиксированная ширина контейнера */
+    margin: 0 auto; /* Для центрирования контейнера по горизонтали */
+    padding: 20px; /* Поля вокруг текста для отступов */
+    top: 30px;
+    margin-bottom: 30px;
+}
+
+.about p {
+    line-height: 1.5;
+}
+
+.whocan {
+    width: 1050px; /* Фиксированная ширина контейнера */
+    margin: 0 auto; /* Для центрирования контейнера по горизонтали */
+    padding: 20px; /* Поля вокруг текста для отступов */
+    top: 30px;
+    margin-bottom: 30px;
+}
+
+.whocan p {
+    line-height: 1.5;
+}
+
+.whattake {
+    width: 1050px; /* Фиксированная ширина контейнера */
+    margin: 0 auto; /* Для центрирования контейнера по горизонтали */
+    padding: 20px; /* Поля вокруг текста для отступов */
+    top: 30px;
+    margin-bottom: 30px;
+}
+
+.whattake p {
+    line-height: 1.5;
+}
+
+.politika {
+    width: 1050px; /* Фиксированная ширина контейнера */
+    margin: 0 auto; /* Для центрирования контейнера по горизонтали */
+    padding: 20px; /* Поля вокруг текста для отступов */
+    top: 30px;
+}
+.politika p {
+    line-height: 1.5;
+}
+
+
+
+/* Стили для футера */
+footer {
+    background-color: #1a1818;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+.address p, .hours p, .social a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.social a {
+    display: flex; /* Используем flexbox для размещения иконки и названия на одной строке */
+    align-items: center; /* Выравнивание элементов по вертикали по центру */
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.social a span {
+    flex-grow: 1;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+/* Стили для иконок социальных сетей */
+.social a img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.copyright {
+    margin-top: 20px; /* Отступ сверху, чтобы создать пространство над элементом */
+    text-align: center;
+}
+
+
+
+/* Стили для горизонтального списка */
+.footermenu {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем внутренние отступы */
+    margin: 0; /* Убираем внешние отступы */
+    display: flex; /* Используем flexbox для горизонтального расположения */
+    justify-content: center;
+    margin-bottom: 50px;
+    
+}
+
+.footermenu li {
+    margin-right: 20px; /* Отступ между пунктами списка */
+    font-size: 110%;
+    padding-left: 90px;
+}
+
+.footermenu a {
+    text-decoration: none;
+    color: #746d6d;
+    font-weight: bold;
+    transition: color 0.3s; /* Анимация изменения цвета */
+}
+
+/* Стили для ссылок при наведении */
+.footermenu a:hover {
+    color: #ff0000;
+}
+
+.map {
+    margin-left: 100px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.maincontact {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.maincontact h2 {
+    text-decoration: underline;
+    font-size: 200%;
+}
+
+.maincontact p {
+    line-height: 1.8;
+    font-size: 110%;
+}
